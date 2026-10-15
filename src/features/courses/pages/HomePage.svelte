@@ -104,7 +104,7 @@
         <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
           Daftar Kursus
         </h1>
-        <p class="text-sm text-slate-500 mt-1">
+        <p class="text-sm text-slate-600 mt-1">
           Eksplorasi modul pembelajaran, tingkatkan kompetensi Anda, dan kelola kursus Anda.
         </p>
       </div>
@@ -135,10 +135,10 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">
             Total Kursus
           </p>
-          <h3 class="text-3xl font-black text-slate-800 mt-1">{totalCount}</h3>
+          <p class="text-3xl font-black text-slate-800 mt-1">{totalCount}</p>
         </div>
         <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
           <BookOpen size={26} strokeWidth={2} />
@@ -147,10 +147,10 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">
             Kursus Saya
           </p>
-          <h3 class="text-3xl font-black text-indigo-600 mt-1">{myCoursesCount}</h3>
+          <p class="text-3xl font-black text-indigo-600 mt-1">{myCoursesCount}</p>
         </div>
         <div class="w-12 h-12 rounded-2xl bg-indigo-50 text-indigo-600 flex items-center justify-center">
           <GraduationCap size={26} strokeWidth={2} />
@@ -159,10 +159,10 @@
 
       <div class="bg-white rounded-2xl p-5 border border-slate-200/80 shadow-xs flex items-center justify-between">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-wider text-slate-400">
+          <p class="text-xs font-semibold uppercase tracking-wider text-slate-600">
             Diikuti
           </p>
-          <h3 class="text-3xl font-black text-emerald-600 mt-1">{enrolledCount}</h3>
+          <p class="text-3xl font-black text-emerald-600 mt-1">{enrolledCount}</p>
         </div>
         <div class="w-12 h-12 rounded-2xl bg-emerald-50 text-emerald-600 flex items-center justify-center">
           <Users size={26} strokeWidth={2} />
@@ -186,7 +186,10 @@
       </div>
 
       <div class="flex items-center gap-3 w-full sm:w-auto">
+        <label for="course-filter-select" class="sr-only">Filter Kursus</label>
         <select
+          id="course-filter-select"
+          aria-label="Filter kursus"
           data-testid="course-filter-select"
           bind:value={filter}
           class="w-full sm:w-auto px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-700 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all"
@@ -208,8 +211,8 @@
         <div class="w-16 h-16 rounded-full bg-slate-100 text-slate-400 flex items-center justify-center mx-auto mb-4">
           <GraduationCap size={32} />
         </div>
-        <h4 class="text-base font-bold text-slate-800">Tidak ada kursus ditemukan</h4>
-        <p class="text-sm text-slate-500 max-w-sm mx-auto mt-1">
+        <h2 class="text-base font-bold text-slate-800">Tidak ada kursus ditemukan</h2>
+        <p class="text-sm text-slate-600 max-w-sm mx-auto mt-1">
           {searchQuery
             ? "Coba gunakan kata kunci pencarian yang lain."
             : "Belum ada kursus yang tersedia. Tambahkan kursus baru sekarang!"}
@@ -244,16 +247,16 @@
             <!-- Course Content Details -->
             <div class="p-5 flex-1 flex flex-col justify-between">
               <div>
-                <h3 class="text-base font-bold text-slate-900 line-clamp-1 mb-1">
+                <h2 class="text-base font-bold text-slate-900 line-clamp-1 mb-1">
                   {course.title}
-                </h3>
-                <p class="text-xs text-slate-500 line-clamp-2 leading-relaxed mb-4">
+                </h2>
+                <p class="text-xs text-slate-600 line-clamp-2 leading-relaxed mb-4">
                   {course.description}
                 </p>
               </div>
 
               <div class="pt-4 border-t border-slate-100 space-y-3">
-                <div class="flex items-center justify-between text-xs text-slate-500">
+                <div class="flex items-center justify-between text-xs text-slate-600">
                   <span class="flex items-center gap-1">
                     <Users size={14} class="text-slate-400" />
                     {course.students ? course.students.length : 0} siswa

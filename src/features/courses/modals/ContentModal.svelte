@@ -159,7 +159,7 @@
             class="w-full px-4 py-2.5 rounded-xl border border-slate-200 bg-white text-slate-800 focus:outline-none focus:ring-2 focus:ring-indigo-500/20 focus:border-indigo-600 transition-all text-sm shadow-xs"
             required
           />
-          <p class="text-xs text-slate-400 mt-1">Masukkan URL YouTube lengkap atau ID video.</p>
+          <p class="text-xs text-slate-600 mt-1">Masukkan URL YouTube lengkap atau ID video.</p>
         </div>
 
         <!-- Modal Footer -->

@@ -288,9 +288,9 @@
 
         <!-- Course Description (Markdown) -->
         <div class="pt-6 border-t border-slate-100 space-y-3">
-          <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400">
+          <h2 class="text-sm font-bold uppercase tracking-wider text-slate-600">
             Deskripsi Silabus
-          </h3>
+          </h2>
           <div class="prose prose-slate max-w-none">
             <MarkdownViewer content={course.description} />
           </div>
@@ -305,7 +305,7 @@
           <h2 class="text-lg font-bold text-slate-900">
             Materi Pembelajaran (<span>{course.contents ? course.contents.length : 0}</span>)
           </h2>
-          <p class="text-xs text-slate-500 mt-0.5">
+          <p class="text-xs text-slate-600 mt-0.5">
             Daftar video materi dan modul belajar yang tersedia
           </p>
         </div>
@@ -341,10 +341,10 @@
                 </span>
 
                 <div class="min-w-0">
-                  <h4 class="text-sm font-bold text-slate-800 truncate">
+                  <h3 class="text-sm font-bold text-slate-800 truncate">
                     {item.title}
-                  </h4>
-                  <p class="text-xs text-slate-400 truncate">
+                  </h3>
+                  <p class="text-xs text-slate-600 truncate">
                     {item.youtube}
                   </p>
                 </div>
