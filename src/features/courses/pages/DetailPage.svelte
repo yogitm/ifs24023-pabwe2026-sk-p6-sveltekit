@@ -126,7 +126,7 @@
       type="button"
       data-testid="back-button"
       on:click={() => goto("/")}
-      class="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-slate-800 transition-colors"
+      class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors"
     >
       <ArrowLeft size={16} />
       <span>Kembali ke Semua Kursus</span>
@@ -134,7 +134,7 @@
   </div>
 
   {#if !course}
-    <div class="flex flex-col items-center justify-center py-24 text-slate-400">
+    <div class="flex flex-col items-center justify-center py-24 text-slate-600">
       <LoaderCircle size={36} class="animate-spin text-indigo-600 mb-3" />
       <p class="text-sm font-medium">Memuat detail kursus...</p>
     </div>
@@ -196,7 +196,7 @@
               {course.title}
             </h1>
 
-            <div class="flex items-center gap-6 text-xs text-slate-500 flex-wrap">
+            <div class="flex items-center gap-6 text-xs text-slate-600 flex-wrap">
               <div class="flex items-center gap-2">
                 <div class="w-6 h-6 rounded-full bg-gradient-to-tr from-indigo-500 to-cyan-500 text-white flex items-center justify-center font-bold text-[10px]">
                   {course.author?.name ? course.author.name.charAt(0).toUpperCase() : "A"}
@@ -353,12 +353,12 @@
               <div class="flex items-center gap-2 shrink-0">
                 {#if isStudent}
                   {#if item.my_status_finished}
-                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-600 text-xs font-semibold">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold">
                       <CheckCircle2 size={13} />
                       <span class="hidden sm:inline">Selesai</span>
                     </span>
                   {:else}
-                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-100 text-slate-500 text-xs font-medium">
+                    <span class="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-slate-100 text-slate-700 text-xs font-medium">
                       <Circle size={13} />
                       <span class="hidden sm:inline">Belum</span>
                     </span>

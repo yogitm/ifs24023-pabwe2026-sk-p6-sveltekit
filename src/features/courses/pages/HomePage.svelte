@@ -202,7 +202,7 @@
 
     <!-- Courses Grid -->
     {#if loadingCourses}
-      <div class="flex flex-col items-center justify-center py-20 text-slate-400">
+      <div class="flex flex-col items-center justify-center py-20 text-slate-600">
         <LoaderCircle size={36} class="animate-spin text-indigo-600 mb-3" />
         <p class="text-sm font-medium">Memuat data kursus...</p>
       </div>

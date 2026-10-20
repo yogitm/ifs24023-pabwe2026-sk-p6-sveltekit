@@ -62,12 +62,12 @@
     <!-- User Grid -->
     <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {#if loadingUsers && filteredUsers.length === 0}
-        <div class="col-span-full py-16 text-center text-slate-400">
+        <div class="col-span-full py-16 text-center text-slate-600">
           <LoaderCircle size={36} class="mx-auto text-indigo-600 animate-spin mb-2" />
           <p class="font-medium text-slate-600">Memuat daftar pengguna...</p>
         </div>
       {:else if filteredUsers.length === 0}
-        <div class="col-span-full py-12 text-center text-slate-400">
+        <div class="col-span-full py-12 text-center text-slate-600">
           <Users size={40} class="mx-auto text-slate-300 mb-2" />
           <p class="font-medium text-slate-600">Tidak ada data pengguna ditemukan.</p>
         </div>

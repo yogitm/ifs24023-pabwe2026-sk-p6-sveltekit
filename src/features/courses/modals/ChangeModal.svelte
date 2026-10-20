@@ -96,12 +96,13 @@
         </div>
         <div>
           <h3 class="text-base font-bold text-slate-800">Ubah Data Kursus</h3>
-          <p class="text-xs text-slate-500">Perbarui judul dan deskripsi materi pembelajaran kursus</p>
+          <p class="text-xs text-slate-600">Perbarui judul dan deskripsi materi pembelajaran kursus</p>
         </div>
       </div>
       <button
         type="button"
         data-testid="close-edit-modal-btn"
+        aria-label="Tutup modal"
         on:click={handleClose}
         class="p-2 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-200/60 transition-colors"
       >

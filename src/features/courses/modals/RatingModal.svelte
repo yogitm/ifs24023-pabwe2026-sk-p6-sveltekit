@@ -79,6 +79,7 @@
         <button
           type="button"
           data-testid="close-rating-modal-btn"
+          aria-label="Tutup modal"
           on:click={handleClose}
           class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
         >

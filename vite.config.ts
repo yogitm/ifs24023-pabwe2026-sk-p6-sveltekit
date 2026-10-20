@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
             port: port,
           },
         }),
-        inlineStyleThreshold: Infinity,
+        inlineStyleThreshold: 1048576,
       }),
       tailwindcss(),
       svelteTesting(),

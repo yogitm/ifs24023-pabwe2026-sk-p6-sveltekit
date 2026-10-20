@@ -92,7 +92,7 @@
           goto("/");
         }
       }}
-      class="inline-flex items-center gap-2 text-sm font-semibold text-slate-500 hover:text-slate-800 transition-colors"
+      class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-slate-900 transition-colors"
     >
       <ArrowLeft size={16} />
       <span>Kembali ke Detail Kursus</span>
@@ -117,7 +117,7 @@
   </div>
 
   {#if !content}
-    <div class="flex flex-col items-center justify-center py-24 text-slate-400">
+    <div class="flex flex-col items-center justify-center py-24 text-slate-600">
       <LoaderCircle size={36} class="animate-spin text-indigo-600 mb-3" />
       <p class="text-sm font-medium">Memuat video pembelajaran...</p>
     </div>

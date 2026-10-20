@@ -93,6 +93,7 @@
         <button
           type="button"
           data-testid="close-cover-modal-btn"
+          aria-label="Tutup modal"
           on:click={handleClose}
           class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
         >
@@ -120,7 +121,7 @@
                 <p class="text-sm font-semibold text-slate-700">
                   Klik untuk memilih foto
                 </p>
-                <p class="text-xs text-slate-500 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
+                <p class="text-xs text-slate-600 mt-1">PNG, JPG, JPEG (Max. 1MB)</p>
               </div>
             {/if}
             <input

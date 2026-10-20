@@ -114,7 +114,7 @@
             <h3 class="text-base font-bold text-slate-800">
               {content ? "Ubah Konten Video" : "Tambah Konten Video"}
             </h3>
-            <p class="text-xs text-slate-500">
+            <p class="text-xs text-slate-600">
               {content ? "Perbarui materi pembelajaran video" : "Tambahkan video materi baru ke kursus"}
             </p>
           </div>
@@ -122,6 +122,7 @@
         <button
           type="button"
           data-testid="close-content-modal-btn"
+          aria-label="Tutup modal"
           on:click={handleClose}
           class="p-1.5 rounded-lg text-slate-400 hover:text-slate-600 hover:bg-slate-100 transition-colors"
         >

@@ -68,12 +68,13 @@
         </div>
         <div>
           <h3 class="text-base font-bold text-slate-800">Tambah Kursus Baru</h3>
-          <p class="text-xs text-slate-500">Buat kursus baru dan tuliskan silabus/detail materi pembelajaran</p>
+          <p class="text-xs text-slate-600">Buat kursus baru dan tuliskan silabus/detail materi pembelajaran</p>
         </div>
       </div>
       <button
         type="button"
         data-testid="close-add-modal-btn"
+        aria-label="Tutup modal"
         on:click={handleClose}
         class="p-2 rounded-xl text-slate-400 hover:text-slate-600 hover:bg-slate-200/60 transition-colors"
       >
